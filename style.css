@@ -1,0 +1,51 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+body { background: #f7f7f7; color: #222; }
+
+header { background: #222; color: #fff; padding: 20px 0; }
+nav { display: flex; align-items: center; justify-content: space-between; width: 90%; margin: auto; }
+nav ul { display: flex; gap: 20px; }
+nav ul li { list-style: none; }
+nav a { color: #fff; text-decoration: none; font-weight: bold; }
+nav a:hover { color: #0fb377; border-bottom: 2px solid #0fb377; }
+nav .logo { width: 50px; }
+nav button { background: #0fb377; color: #fff; border: none; padding: 10px 20px; margin-left: 10px; border-radius: 6px; cursor: pointer; }
+nav button:hover { background: #fff; color: #0fb377; }
+
+.hero { padding: 60px 0; text-align: center; background: linear-gradient(120deg,#c1dfc4,#deecdd); min-height: 50vh; }
+.hero .name { color: #0fb377; }
+.hero .profile-pic { width: 120px; border-radius: 50%; margin: 20px 0; }
+.hero .action-buttons button { margin: 10px; }
+
+.about { padding: 50px 10%; background: #fff; }
+.about h2 { color: #0fb377; }
+.about-tabs { margin: 20px 0; }
+.about-tabs button { margin-right: 12px; padding: 8px 18px; border: none; border-radius: 5px; background: #0fb377; color: #fff; }
+.about-tabs button:hover { background: #222; }
+.tab-content { margin-top: 20px; padding: 15px; background: #f1f1f1; border-radius: 6px; }
+
+.services { padding: 50px 10%; background: #edfcec; }
+.services h2 { color: #0fb377; }
+.service-list { display: flex; gap: 30px; }
+.service-item { background: #fff; padding: 25px; flex: 1; border-radius: 6px; box-shadow: 0 2px 8px #bbb; }
+.service-item:hover { transform: translateY(-8px); box-shadow: 0 4px 14px #0fb37744; }
+
+.projects { padding: 50px 10%; background: #fff; }
+.projects h2 { color: #0fb377; }
+.project-gallery { display: flex; gap: 30px; flex-wrap: wrap; }
+.project-item { background: #f1f1f1; padding: 20px; flex: 1 1 220px; border-radius: 6px; box-shadow: 0 1px 5px #bbb; transition: 0.3s; }
+.project-item img { width: 100%; border-radius: 6px; }
+.project-item:hover { box-shadow: 0 6px 18px #0fb37733; }
+
+.contact { padding: 50px 10%; background: #edfcec; }
+.contact h2 { color: #0fb377; }
+.contactForm { display: flex; flex-direction: column; gap: 15px; max-width: 350px; margin: auto; }
+.contactForm input, .contactForm textarea { padding: 10px; border: 1px solid #bbb; border-radius: 6px; }
+.contactForm button { background: #0fb377; color: #fff; border: none; padding: 10px; border-radius: 6px; cursor: pointer; }
+.contactForm button:hover { background: #222; }
+
+footer { background: #222; color: #fff; text-align: center; padding: 20px 0; margin-top: 30px; }
+
+@media (max-width: 700px) {
+  .service-list, .project-gallery { flex-direction: column; }
+  .about, .services, .projects, .contact { padding: 30px 5%; }
+}
